@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    h1{text-align: center;
+    color: purple;}
+</style>
+<body>
+    <form id="myform">
+
+        <h1> Flight Booking System</h1>
+        
+        
+        <fieldset>
+            <label for="">Source Cities: </label><br>
+            <input list="searchOptions" class="searchInput" id="sourceCity" type="text" placeholder="Source Cities"
+                name="sourceCity">
+            <datalist id="searchOptions">
+            </datalist>
+
+            <br>
+            <label for="">Destination Cities: </label><br>
+            <input list="searchOptions1" class="searchInput1" type="text" id="destinationCity"
+                placeholder="Destination Cities" name="destinationCity">
+            <datalist id="searchOptions1">
+            </datalist>
+
+
+            <br>
+            <label for="" required=""> Travel Date:</label><br>
+            <input type="date" name="startingDate" id="startingDate">
+
+            <br>
+            <label for=""> Return Date:</label><br>
+            <input type="date" name="endingDate" id= "endingDate">
+            <br>
+
+        </fieldset> <br>
+        
+       
+        <button type="submit" id="searchResultButton">Search Result </button>
+     
+        <br>
+
+    </form><br>
+    <input type="text" placeholder="Search Flight" id="search Flight"> <br>
+        <br>
+    <div class="searchResultTable">
+        <!-- <table>
+            <tr>
+                <th>Flight Number</th>
+                <th>total no of results</th>
+                <th>no of stops</th>
+                <th>price</th>
+                <th>duration</th>
+                <th>departure time</th>
+                <th>arrival time</th>
+                <th>airline logo </th>
+                <th>airline name </th>
+                
+            </tr>
+            <tr>
+                <td>jdzfgbodsb</td>
+                <td>jdzfgbodsb</td>
+                <td>jdzfgbodsb</td>
+                <td>jdzfgbodsb</td>
+                <td>jdzfgbodsb</td>
+                <td>jdzfgbodsb</td>
+                <td>jdzfgbodsb</td>
+                <td>
+                   <div class="imageBox">
+                        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-182880589-1493334765.jpg">
+                        <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202107/screenshot_2021-07-28_at_8-sixteen_nine.png?size=1200:675"
+                        <img src="https://images.indianexpress.com/2020/08/air-india-2.jpg"
+                        <img src="https://cdn.businesstraveller.com/wp-content/uploads/2019/04/Jet-AirwaysB777-916x515-916x515-1-916x515-1.jpg"
+                        <img src="https://www.airlinesbooking.net/wp-content/uploads/2018/09/JetLite-Airlines-Reviews.jpg"
+                        <img src="https://cdn.businesstraveller.com/wp-content/uploads/fly-images/1097123/iStock-1164989387-e1619027542434-916x515.jpg"
+                    </div> 
+                </td>
+            </tr>
+         </table>  -->
+    </div>
+    <br>
+    <!-- <div class="BookNowButton">
+        <button type="button" id="BookNowButton" class="BookNowButton"> Book now </button>  
+    </div> -->
+    <button type="submit" id="BookNowButton">Book Now</button>
+    <br>
+
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

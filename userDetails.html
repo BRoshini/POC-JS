@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>User Details</h1>
+    <style>
+    h1{
+        text-align: center;
+        color: blue;
+    }</style>
+</head>
+<body>
+    <div id="userDdetails">
+        <fieldset>
+            <form name="f1" id="userDdetailsForm">
+                <div>
+                    <label htmlFor='fname'>First Name: </label.><br>
+                        <input type="text" placeholder="first name" name="fname" id="fname">
+                        <div id="invalidfname">
+                        <!-- <label id="f_lblname" style="color: red; visibility: hidden;">Invalid firstname</label>   -->
+
+                        </div><br>
+                </div>
+                <div>
+                    <label htmlFor='lname'>Last Name:</label.><br>
+                        <input type="text" placeholder="last name" name="lname" id="lname"><br>
+                        <div id="invalidlname">
+                        <!-- <label id="l_lblname" style="color: red; visibility: hidden;">Invalid lastname</label> -->
+                        </div><br>
+                </div>
+
+                <div>
+                    <label htmlFor="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email"
+                         >
+                         <br>
+                         <label id="lbltext" style="color: red; visibility:hidden;">Invalid Email</label>
+                </div><br>
+                
+                <div>
+                    <label>Mobile Number:</label><br>
+                    <input type="number" placeholder="Mobile Number"  id="number" name="number">
+                    <div id="mnumber">
+                          <label id="mnumber" style="color: red; visibility: hidden;">Invalid number</label> 
+                </div><br>
+
+               </div>
+        </fieldset>
+        <br>
+
+        <button type="submit" id="confirmsubmitbtn">Confirm Booking</button>
+        </form>
+    </div>
+    <script src="userDetails.js"></script>
+</body>
+</html>

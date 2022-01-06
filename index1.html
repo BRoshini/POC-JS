@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1{
+            text-align: center;
+            color: olivedrab;
+        }
+    </style>
+<h1>Booking Confirmed!!</h1>
+    <div  id="details">
+
+    </div>
+
+
+    <script type="text/javascript">
+        var a = location.search;
+        a = a.split("=")
+        a = a[1];
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "http://localhost:3000/flightTickets/" + a);
+        xhr.responseType = "json";
+        xhr.send();
+        xhr.onload = function () {
+            var details = document.getElementById("details");
+            var data = xhr.response ;
+            details.innerHTML = "<style>p{color:blue}</style><p><b>First Name:</b> : "+data["fname"]+"</p>"+
+            "<p><b>Last Name:</b> : "+data["lname"]+"</p>"+
+            "<p><b>Email:</b> : "+data["email"]+"</p>"+
+            "<p><b>Mobile Number:</b> : "+data["number"]+"</p>"+
+            "<p><b>Source City:</b> : "+data["sourceCity"]+"</p>"+
+            "<p><b>Destination City:</b> : "+data["destinationCity"]+"</p>"+
+            "<p><b>Starting Date:</b> : "+data["startingDate"]+"</p>"+
+            "<p><b>Return Date:</b> : "+data["endingDate"]+"</p>"+
+            "<p><b>Flight Number:</b> : "+data["flightNumber"]+"</p>"+
+            "<p><b>Flight Duration:</b> : "+data["flightduration"]+"</p>"
+            
+        }
+    </script>
+</body>
+
+</html>
