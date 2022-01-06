@@ -1,0 +1,93 @@
+{
+  "sourceDetails": ["Visakhapatnam", "guntur", "gujarat", "chittoor"],
+  "destinationDetails": ["hyderabad", "west godavari", "west bengal", "puna"],
+
+  "flightDetails": [
+    {
+      "visakhapatnam-hyderabad": {
+        "flightNumber": "DF275B",
+        "price": "Rs45690",
+        "noOfStops": 1,
+        "duration": "3hours",
+        "departureTime": "12:45pm",
+        "arrivalTime": "3:00pm",
+        "airlineName": "Indigo",
+        "imagePath":"images/indigo.png"
+      }
+    },
+    {
+      "visakhapatnam-hyderabad": {
+        "flightNumber": "AY4561D",
+        "price": "Rs10690",
+        "noOfStops": 1,
+        "duration": "3hours",
+        "departureTime": "12:00pm",
+        "arrivalTime": "3:00pm",
+        "airlineName": "Airindia",
+        "imagePath":"images/airindia.png"
+      }
+    },
+    
+    {
+      "guntur-puna": {
+        "flightNumber": "B89CJ9",
+        "price": "Rs12987",
+        "noOfStops": 1,
+        "duration": "3hours",
+        "departureTime": "7:45am",
+        "arrivalTime": "10:00pm",
+        "airlineName": "AirIndia",
+        "imagePath":"images/airindia.png"
+      }
+    },
+    {
+      "guntur-west godavari":{
+        "flightNumber": "N987GFJ9",
+        "price": "Rs21007",
+        "noOfStops": 2,
+        "duration": "3hours",
+        "departureTime": "4:45am",
+        "arrivalTime": "7:00pm",
+        "airlineName": "JetAirways",
+        "imagePath":"images/jetairways.png"
+      }
+    },
+    {
+      "gujarat-west bengal":{
+        "flightNumber": "BEC456W",
+        "price": "Rs162077",
+        "noOfStops": 2,
+        "duration": "4hours",
+        "departureTime": "3:00am",
+        "arrivalTime": "7:00pm",
+        "airlineName": "JetLite",
+        "imagePath":"images/Jetlite.png"
+      }
+      
+
+    },
+    {
+      "chittoor-puna":{
+        "flightNumber": "AD213GY",
+        "price": "Rs21000",
+        "noOfStops": 2,
+        "duration": "1hours",
+        "departureTime": "6:00am",
+        "arrivalTime": "7:00pm",
+        "airlineName": "Indigo",
+        "imagePath":"images/indigo.png"
+      }
+    }
+
+
+  ]
+}
+
+
+
+
+
+
+
+ 
+  
